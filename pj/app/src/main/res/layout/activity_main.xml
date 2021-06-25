@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/baseLayout">
+
+    <SlidingDrawer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:content="@id/content"
+        android:handle="@id/btn8">
+
+        //슬라이드 드로워 손잡이
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8강전"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        //서랍 안
+        <ScrollView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnStart8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start!"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"/>
+
+            //8강 첫번째 선택
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                //1번 그림
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="30dp"
+                    />
+
+                //2번 그림
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnNext1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_weight="1"/>
+
+            //8강 두 번째 선택
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                //3번 그림
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="30dp"/>
+
+                //4번 그림
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnNext2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_weight="1"/>
+
+            //8강 세 번째 선택
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                //5번 그림
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="30dp"/>
+
+                //6번 그림
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnNext3"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_weight="1"/>
+
+            //8강 네 번째 선택
+            <RadioGroup
+                android:id="@+id/rg4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                //7번 그림
+                <RadioButton
+                    android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image7"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="30dp"/>
+
+                //8번 그림
+                <RadioButton
+                    android:id="@+id/radio8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image8"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp" />
+
+            </RadioGroup>
+
+            //8강전 선택완료 -> 4강전으로 이동하기
+            <Button
+                android:id="@+id/btnFinish8"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finish"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+    </SlidingDrawer>
+
+</LinearLayout>

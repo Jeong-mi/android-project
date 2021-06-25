@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ListSelect"
+        android:title="위시리스트 도서 조회">
+    </item>
+    <item
+        android:id="@+id/LibInsert"
+        android:title="도서관 도서 추가">
+    </item>
+    <item
+        android:id="@+id/ListDelete"
+        android:title="위시리스트 도서 삭제">
+    </item>
+</menu>

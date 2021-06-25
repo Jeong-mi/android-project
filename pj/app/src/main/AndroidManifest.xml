@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pj">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pj">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".quarter" android:label="Quarter 액티비티" />
+        <activity android:name=".finals" android:label="Finals 액티비티" />
+        <activity android:name=".result" android:label="Result 액티비티" />
+
+        <activity android:name=".list_select" android:label="위시리스트 도서 조회 액티비티" />
+        <activity android:name=".lib_insert" android:label="도서관 도서 추가 액티비티" />
+        <activity android:name=".list_delete" android:label="위시리스트 도서 삭제 액티비티" />
+
+    </application>
+
+</manifest>

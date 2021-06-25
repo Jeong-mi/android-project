@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnStart4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4강전 Start!"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"/>
+
+
+            //4강 첫번째 선택
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                //1번 그림
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="30dp"/>
+
+                //2번 그림
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:layout_weight="1"/>
+
+            //4강 두 번째 선택
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                //3번 그림
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="30dp"/>
+
+                //4번 그림
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/radio_button_like"
+                    android:button="@android:color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp" />
+
+            </RadioGroup>
+
+            //4강전 선택완료 -> 결승전으로 이동하기
+            <Button
+                android:id="@+id/btnFinish4"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finish"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
